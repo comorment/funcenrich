@@ -1,0 +1,86 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# comorment.funcenrich
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+comorment.funcenrich implements the genetic correlation and functional enrichment analysis performed for work package 4 of the CoMorMent H2020 EU grant.
+
+## Installation
+
+The package can be installed by 
+
+``` r
+devtools::install_github(comorment/comorment.funcenrich)
+```
+
+## Example
+
+The package comes with three prepared munged summary stats from publicly available summary statistics of GWASs of coronary artery disease (CAD), anxiety (ANX) and BMI, which have been munged to Hapmap3 SNPs. We have done some internal processing of the data so it wont be exactly like what you would get if you download it yourself. The summary statistics are supplied as tsv files and can be access from the paths.
+
+```{r example}
+library(comorment.funcenrich)
+path_anx <- system.file("extdata", "anx", package = "comorment.funcenrich")
+path_bmi <- system.file("extdata", "bmi", package = "comorment.funcenrich")
+path_cad <- system.file("extdata", "cad", package = "comorment.funcenrich")
+paths <- c(path_anx, path_bmi, path_cad)
+```
+
+The CAD data comes from
+
+Nelson, C., Goel, A., Butterworth, A. et al. Association analyses based on false discovery rate implicate new loci for coronary artery disease. Nat Genet 49, 1385–1391 (2017). https://doi.org/10.1038/ng.3913
+
+and can be downloaded from http://www.cardiogramplusc4d.org/media/cardiogramplusc4d-consortium/data-downloads/UKBB.GWAS1KG.EXOME.CAD.SOFT.META.PublicRelease.300517.txt.gz. The ANX data comes from 
+
+Purves, K.L., Coleman, J.R.I., Meier, S.M. et al. A major role for common genetic variation in anxiety disorders. Mol Psychiatry 25, 3292–3303 (2020). https://doi.org/10.1038/s41380-019-0559-1
+and can be downloaded from https://www.kcl.ac.uk/people/kirstin-purves. Finally, the BMI data comes from
+
+Loic Yengo, Julia Sidorenko, Kathryn E Kemper, Zhili Zheng, Andrew R Wood, Michael N Weedon, Timothy M Frayling, Joel Hirschhorn, Jian Yang, Peter M Visscher, the GIANT Consortium, Meta-analysis of genome-wide association studies for height and body mass index in ∼700000 individuals of European ancestry, Human Molecular Genetics, Volume 27, Issue 20, 15 October 2018, Pages 3641–3649, https://doi.org/10.1093/hmg/ddy271
+
+and can be downloaded from http://cnsgenomics.com/data/yengo_et_al_2018_hmg/Meta-analysis_Locke_et_al+UKBiobank_2018_UPDATED.txt.gz
+
+### Reference files
+
+First we need a bunch of reference files. The function `download_reference_data()` will download the necessary files from https://alkesgroup.broadinstitute.org/LDSCORE and https://storage.googleapis.com/broad-alkesgroup-public/LDSCORE/ and will put them in a `REF` directory in the working directory. 
+
+
+```{r,eval = FALSE}
+download_reference_data()
+```
+
+Let's define trait names and include sample- and population prevalences taken from the original publications and the global burden of disease project.
+
+```{r params}
+pop_prev <- c(0.0582, NA, 0.215)
+sample_prev <- c(0.3, NA, 0.11)
+trait_names <- c("ANX", "BMI", "CAD")
+```
+
+We can now compute the genetic covariance matrix between the traits and compute the genetic correlation between CAD and ANX as well as the genetic correlation between those two traits adjusted for the genetic component of BMI.
+
+```{r covariance, eval = FALSE}
+  gen_cov <- est_gen_cov(paths, sample_prev = sample_prev, population_prev = pop_prev, trait_names = trait_names)
+  est_genetic_correlation(trait1 = "CAD", trait2 = "ANX", gen_cov = gen_cov)
+  est_genetic_correlation(trait1 = "CAD", trait2 = "ANX", gen_cov = gen_cov, adjust = "BMI")
+```
+
+Finally, we can compute genomic regions enriched for the shared genetic component of CAD, ANX, and BMI
+
+```{r enrichment, eval = FALSE}
+  gen_cov_stratified <- est_stratified_gen_cov(paths, sample_prev = sample_prev, population_prev = pop_prev, trait_names = trait_names)
+  est_enrichment(trait_names, gen_cov_stratified)
+```
