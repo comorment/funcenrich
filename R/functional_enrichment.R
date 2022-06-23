@@ -23,4 +23,5 @@ est_enrichment <- function(traits, gen_cov_strat) {
   res <- GenomicSEM::enrich(s_covstruc = gen_cov_strat, model = spec, params = params, std.lv = TRUE)[[1]]
   dplyr::arrange(tibble::as_tibble(res), desc(Enrichment - 1.96 * Enrichment_SE))
 
+
 }
