@@ -12,7 +12,7 @@ est_enrichment(traits, gen_cov_strat)
 \item{gen_cov_strat}{Stratified genetic covariance matrices}
 }
 \value{
-Tibble of enrichment in regulatory genomic regions
+Tibble of enrichment of latent factor variance in regulatory genomic regions
 }
 \description{
 Enrichment in genomic regions of a variance of a common latent factor

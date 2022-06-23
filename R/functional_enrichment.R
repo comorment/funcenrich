@@ -5,7 +5,7 @@
 #' @param traits Traits making up the common latent factor, should beat least 3
 #' @param gen_cov_strat Stratified genetic covariance matrices
 #'
-#' @return Tibble of enrichment in regulatory genomic regions
+#' @return Tibble of enrichment of latent factor variance in regulatory genomic regions
 #' @export
 #'
 #' @examples NA
