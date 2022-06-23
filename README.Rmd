@@ -13,19 +13,19 @@ knitr::opts_chunk$set(
 )
 ```
 
-# comorment.funcenrich
+# funcenrich
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-comorment.funcenrich implements some genetic correlation and functional enrichment analysis performed for work package 4 of the CoMorMent H2020 EU grant.
+funcenrich implements some genetic correlation and functional enrichment analysis performed for work package 4 of the CoMorMent H2020 EU grant.
 
 ## Installation
 
 The package can be installed by 
 
 ``` r
-devtools::install_github(comorment/comorment.funcenrich)
+devtools::install_github(comorment/funcenrich)
 ```
 
 ## Example
@@ -33,10 +33,10 @@ devtools::install_github(comorment/comorment.funcenrich)
 The package comes with three prepared munged summary stats from publicly available summary statistics of GWASs of coronary artery disease (CAD), anxiety (ANX) and BMI, which have been munged to Hapmap3 SNPs. We have done some internal processing of the data so it wont be exactly like what you would get if you download it yourself. The summary statistics are supplied as tsv files and can be access from the paths.
 
 ```{r example}
-library(comorment.funcenrich)
-path_anx <- system.file("extdata", "anx", package = "comorment.funcenrich")
-path_bmi <- system.file("extdata", "bmi", package = "comorment.funcenrich")
-path_cad <- system.file("extdata", "cad", package = "comorment.funcenrich")
+library(funcenrich)
+path_anx <- system.file("extdata", "anx", package = "funcenrich")
+path_bmi <- system.file("extdata", "bmi", package = "funcenrich")
+path_cad <- system.file("extdata", "cad", package = "funcenrich")
 paths <- c(path_anx, path_bmi, path_cad)
 ```
 

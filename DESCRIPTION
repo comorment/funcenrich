@@ -1,9 +1,9 @@
-Package: comorment.funcenrich
-Title: Implements some of the genetic correlation and functional enrichment analysis for CoMorMent
+Package: funcenrich
+Title:Genetic correlation and functional enrichment analysis for CoMorMent 
 Version: 0.0.0.9000
 Authors@R: 
     person("Jacob", "Bergstedt", , "jacob.bergstedt@ki.se", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "0000-0002-9279-6936"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
