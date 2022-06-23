@@ -1,5 +1,5 @@
 Package: comorment.funcenrich
-Title: What the Package Does (One Line, Title Case)
+Title: Implements some of the genetic correlation and functional enrichment analysis for CoMorMent
 Version: 0.0.0.9000
 Authors@R: 
     person("Jacob", "Bergstedt", , "jacob.bergstedt@ki.se", role = c("aut", "cre"),
