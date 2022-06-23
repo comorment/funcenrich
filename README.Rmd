@@ -58,7 +58,7 @@ and can be downloaded from http://cnsgenomics.com/data/yengo_et_al_2018_hmg/Meta
 First we need a bunch of reference files. The function `download_reference_data()` will download the necessary files from https://alkesgroup.broadinstitute.org/LDSCORE and https://storage.googleapis.com/broad-alkesgroup-public/LDSCORE/ and will put them in a `REF` directory in the working directory. 
 
 
-```{r,eval = FALSE}
+```{r}
 download_reference_data()
 ```
 
@@ -72,7 +72,7 @@ trait_names <- c("ANX", "BMI", "CAD")
 
 We can now compute the genetic covariance matrix between the traits and compute the genetic correlation between CAD and ANX as well as the genetic correlation between those two traits adjusted for the genetic component of BMI.
 
-```{r covariance, eval = FALSE}
+```{r covariance}
   gen_cov <- est_gen_cov(paths, sample_prev = sample_prev, population_prev = pop_prev, trait_names = trait_names)
   est_genetic_correlation(trait1 = "CAD", trait2 = "ANX", gen_cov = gen_cov)
   est_genetic_correlation(trait1 = "CAD", trait2 = "ANX", gen_cov = gen_cov, adjust = "BMI")
@@ -80,7 +80,7 @@ We can now compute the genetic covariance matrix between the traits and compute 
 
 Finally, we can compute genomic regions enriched for the shared genetic component of CAD, ANX, and BMI
 
-```{r enrichment, eval = FALSE}
+```{r enrichment}
   gen_cov_stratified <- est_stratified_gen_cov(paths, sample_prev = sample_prev, population_prev = pop_prev, trait_names = trait_names)
   est_enrichment(trait_names, gen_cov_stratified)
 ```
