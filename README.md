@@ -14,7 +14,7 @@ analysis performed for work package 4 of the CoMorMent H2020 EU grant.
 The package can be installed by
 
 ``` r
-devtools::install_github(comorment/funcenrich)
+devtools::install_github("comorment/funcenrich")
 ```
 
 ## Example
@@ -139,61 +139,61 @@ component of BMI.
 #> when loading 'GenomicSEM'
 #> Warning: replacing previous import 'gdata::object.size' by 'utils::object.size'
 #> when loading 'GenomicSEM'
-#> Multivariate ld-score regression of 3 traits (C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anx C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/bmi C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad) began at: 2022-06-23 11:21:28
+#> Multivariate ld-score regression of 3 traits (C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anx C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/bmi C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad) began at: 2022-06-28 10:13:13
 #> Reading in LD scores
-#> Read in summary statistics [1/3] from: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anx
+#> Read in summary statistics [1/3] from: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anx
 #> Out of 1100641 SNPs, 1097932 remain after merging with LD-score files
 #> Removing 0 SNPs with Chi^2 > 83.566; 1097932 remain
-#> Read in summary statistics [2/3] from: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/bmi
+#> Read in summary statistics [2/3] from: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/bmi
 #> Out of 1019865 SNPs, 1014995 remain after merging with LD-score files
 #> Removing 6 SNPs with Chi^2 > 795.64; 1014989 remain
-#> Read in summary statistics [3/3] from: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad
+#> Read in summary statistics [3/3] from: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad
 #> Out of 1186097 SNPs, 1173849 remain after merging with LD-score files
 #> Removing 23 SNPs with Chi^2 > 154.654; 1173826 remain
-#> Estimating heritability [1/6] for: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anx
-#> Please note that the results initially printed to the screen and log file reflect the NON-liability h2 and cov_g. However, a liability conversion is being used for trait C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anx when creating the genetic covariance matrix used as input for Genomic SEM and liability scale results are printed at the end of the log file.
-#> Heritability Results for trait: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anx
+#> Estimating heritability [1/6] for: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anx
+#> Please note that the results initially printed to the screen and log file reflect the NON-liability h2 and cov_g. However, a liability conversion is being used for trait C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anx when creating the genetic covariance matrix used as input for Genomic SEM and liability scale results are printed at the end of the log file.
+#> Heritability Results for trait: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anx
 #> Mean Chi^2 across remaining SNPs: 1.1835
 #> Lambda GC: 1.1714
 #> Intercept: 1.008 (0.0089)
 #> Ratio: 0.0436 (0.0484)
 #> Total Observed Scale h2: 0.1048 (0.0076)
 #> h2 Z: 13.9
-#> Calculating genetic covariance [2/6] for traits: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/bmi
-#> 954338 SNPs remain after merging C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/bmi summary statistics
-#> Results for genetic covariance between: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/bmi
+#> Calculating genetic covariance [2/6] for traits: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/bmi
+#> 954338 SNPs remain after merging C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/bmi summary statistics
+#> Results for genetic covariance between: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/bmi
 #> Mean Z*Z: 0.0732
 #> Cross trait Intercept: 0.0168 (0.0097)
 #> Total Observed Scale Genetic Covariance (g_cov): 0.0121 (0.0043)
 #> g_cov Z: 2.85
 #> g_cov P-value: 0.0044091
-#> Calculating genetic covariance [3/6] for traits: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad
-#> 1091859 SNPs remain after merging C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad summary statistics
-#> Results for genetic covariance between: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad
+#> Calculating genetic covariance [3/6] for traits: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad
+#> 1091859 SNPs remain after merging C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad summary statistics
+#> Results for genetic covariance between: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad
 #> Mean Z*Z: 0.0446
 #> Cross trait Intercept: -0.0098 (0.0053)
 #> Total Observed Scale Genetic Covariance (g_cov): 0.0245 (0.0038)
 #> g_cov Z: 6.53
 #> g_cov P-value: 6.7903e-11
-#> Estimating heritability [4/6] for: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/bmi
-#> Heritability Results for trait: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/bmi
+#> Estimating heritability [4/6] for: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/bmi
+#> Heritability Results for trait: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/bmi
 #> Mean Chi^2 across remaining SNPs: 3.9344
 #> Lambda GC: 2.7869
 #> Intercept: 1.0199 (0.0277)
 #> Ratio: 0.0068 (0.0094)
 #> Total Observed Scale h2: 0.2091 (0.0063)
 #> h2 Z: 33.3
-#> Calculating genetic covariance [5/6] for traits: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/bmi and C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad
-#> 1011369 SNPs remain after merging C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/bmi and C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad summary statistics
-#> Results for genetic covariance between: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/bmi and C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad
+#> Calculating genetic covariance [5/6] for traits: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/bmi and C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad
+#> 1011369 SNPs remain after merging C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/bmi and C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad summary statistics
+#> Results for genetic covariance between: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/bmi and C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad
 #> Mean Z*Z: 0.2977
 #> Cross trait Intercept: 0.0175 (0.0088)
 #> Total Observed Scale Genetic Covariance (g_cov): 0.0423 (0.0032)
 #> g_cov Z: 13.1
 #> g_cov P-value: 5.2908e-39
-#> Estimating heritability [6/6] for: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad
-#> Please note that the results initially printed to the screen and log file reflect the NON-liability h2 and cov_g. However, a liability conversion is being used for trait C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad when creating the genetic covariance matrix used as input for Genomic SEM and liability scale results are printed at the end of the log file.
-#> Heritability Results for trait: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad
+#> Estimating heritability [6/6] for: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad
+#> Please note that the results initially printed to the screen and log file reflect the NON-liability h2 and cov_g. However, a liability conversion is being used for trait C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad when creating the genetic covariance matrix used as input for Genomic SEM and liability scale results are printed at the end of the log file.
+#> Heritability Results for trait: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad
 #> Mean Chi^2 across remaining SNPs: 1.1379
 #> Lambda GC: 1.0465
 #> Intercept: 0.8515 (0.0092)
@@ -214,15 +214,15 @@ component of BMI.
 #> Genetic Correlation between ANX and BMI: 0.082 (0.0288)
 #> Genetic Correlation between ANX and CAD: 0.2461 (0.0377)
 #> Genetic Correlation between BMI and CAD: 0.3011 (0.023)
-#> LDSC finished running at 2022-06-23 11:21:53
-#> Running LDSC for all files took 0 minutes and 24 seconds
+#> LDSC finished running at 2022-06-28 10:14:17
+#> Running LDSC for all files took 1 minutes and 3 seconds
   est_genetic_correlation(trait1 = "CAD", trait2 = "ANX", gen_cov = gen_cov)
 #> [1] "Running primary model"
 #> [1] "Calculating CFI"
 #> [1] "Calculating Standardized Results"
 #> [1] "Calculating SRMR"
 #> elapsed 
-#>    0.24 
+#>    0.47 
 #> [1] "Model fit statistics are all printed as NA as you have specified a fully saturated model (i.e., df = 0)"
 #> # A tibble: 1 × 5
 #>   Trait1 Trait2 Adjust_for    rg  rg_se
@@ -234,7 +234,7 @@ component of BMI.
 #> [1] "Calculating Standardized Results"
 #> [1] "Calculating SRMR"
 #> elapsed 
-#>    0.28 
+#>    0.61 
 #> [1] "Model fit statistics are all printed as NA as you have specified a fully saturated model (i.e., df = 0)"
 #> # A tibble: 1 × 5
 #>   Trait1 Trait2 Adjust_for    rg  rg_se
@@ -247,7 +247,7 @@ component of CAD, ANX, and BMI
 
 ``` r
   gen_cov_stratified <- est_stratified_gen_cov(paths, sample_prev = sample_prev, population_prev = pop_prev, trait_names = trait_names)
-#> Analysis started at2022-06-23 11:21:53
+#> Analysis started at2022-06-28 10:14:18
 #> The following traits are being analyzed analyzed:ANX
 #> 
 #>  The following traits are being analyzed analyzed:BMI
@@ -266,13 +266,13 @@ component of CAD, ANX, and BMI
 #> Weighted LD scores contain 1187349 SNPs
 #>  
 #> Reading in annotation files. This step may take a few minutes.
-#> Read in summary statistics [1/3] from: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anx
+#> Read in summary statistics [1/3] from: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anx
 #> Out of 1100641 SNPs, 1087360 remain after merging with LD-score files
 #> Removing 0 SNPs with Chi^2 > 83.566; 1087360 remain
-#> Read in summary statistics [2/3] from: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/bmi
+#> Read in summary statistics [2/3] from: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/bmi
 #> Out of 1019865 SNPs, 1009250 remain after merging with LD-score files
 #> Removing 6 SNPs with Chi^2 > 795.64; 1009244 remain
-#> Read in summary statistics [3/3] from: C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad
+#> Read in summary statistics [3/3] from: C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad
 #> Out of 1186097 SNPs, 1172697 remain after merging with LD-score files
 #> Removing 23 SNPs with Chi^2 > 154.654; 1172674 remain
 #> Liability h2:0.1229(0.0121)
@@ -282,14 +282,14 @@ component of CAD, ANX, and BMI
 #> Intercept: 1.0018(0.0113)
 #> Ratio: 0.0096(0.0617)
 #> Partitioning the heritability over the annotations
-#> 946781 SNPs remain after merging C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/bmi summary statistics
-#> Results for covariance between:C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anxandC:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/bmi
+#> 946781 SNPs remain after merging C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/bmi summary statistics
+#> Results for covariance between:C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anxandC:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/bmi
 #> Mean Z*Z:0.0726
 #> Cross trait Intercept: 0.0328(0.0123)
 #> cov_g:0.005(0.0057)
 #> Partitioning the genetic covariance over the annotations
-#> 1083181 SNPs remain after merging C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad summary statistics
-#> Results for covariance between:C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/anxandC:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad
+#> 1083181 SNPs remain after merging C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anx and C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad summary statistics
+#> Results for covariance between:C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/anxandC:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad
 #> Mean Z*Z:0.0448
 #> Cross trait Intercept: -0.0039(0.0065)
 #> cov_g:0.0212(0.0059)
@@ -301,8 +301,8 @@ component of CAD, ANX, and BMI
 #> Intercept: 1.0607(0.0309)
 #> Ratio: 0.0207(0.0105)
 #> Partitioning the heritability over the annotations
-#> 1006198 SNPs remain after merging C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/bmi and C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad summary statistics
-#> Results for covariance between:C:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/bmiandC:/Users/jacber/AppData/Local/Temp/RtmpMPzHDs/temp_libpath24406c934521/funcenrich/extdata/cad
+#> 1006198 SNPs remain after merging C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/bmi and C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad summary statistics
+#> Results for covariance between:C:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/bmiandC:/Users/jacber/AppData/Local/Temp/RtmpMdyWEx/temp_libpath14805ff96614/funcenrich/extdata/cad
 #> Mean Z*Z:0.2972
 #> Cross trait Intercept: 0.0169(0.0094)
 #> cov_g:0.0456(0.0035)
@@ -314,8 +314,8 @@ component of CAD, ANX, and BMI
 #> Intercept: 0.8518(0.0099)
 #> Ratio: -1.0906(0.0731)
 #> Partitioning the heritability over the annotations
-#> Analysis ended at 2022-06-23 11:26:07
-#> Analysis took 4 minutes and 13.4185869693756 seconds
+#> Analysis ended at 2022-06-28 10:23:28
+#> Analysis took 9 minutes and 10.4758009910583 seconds
   est_enrichment(trait_names, gen_cov_stratified)
 #> [1] "baseL2 is assumed to be the baseline annotation that includes all SNPs."
 #> [1] "Running model for baseline annotation"

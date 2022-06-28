@@ -24,8 +24,8 @@ funcenrich implements some genetic correlation and functional enrichment analysi
 
 The package can be installed by 
 
-``` r
-devtools::install_github(comorment/funcenrich)
+``` r 
+devtools::install_github("comorment/funcenrich")
 ```
 
 ## Example
