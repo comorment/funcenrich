@@ -4,7 +4,7 @@ download_and_untar <- function(filepath, outdir = FALSE) {
   file <- paste0("REF/", basename(filepath))
   if (!fs::dir_exists("REF")) fs::dir_create("REF")
   download.file(filepath, destfile = file)
-  if (!outdir) untar(file, exdir = "REF")
+  if (!outdir) untar(file, exdir = "REF", tar = "internal")
   else untar(file, exdir = paste0("REF/", stringr::str_extract(basename(filepath), ".*(?=.tgz)")), tar = "internal")
   fs::file_delete(file)
   NULL
